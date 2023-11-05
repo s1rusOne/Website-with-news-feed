@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica ', sans-serif;
+}
+
+body {
+
+    background-color: #212121;
+}
+
+#root {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+
+    display: flex;
+    padding: 15px;
+    border: 2px solid #ff8800;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border-radius: 25px;
+}
+
+.post__btn {
+
+    display: flex;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+
+    padding: 10px;
+    border: 1px solid #ff8800;
+    cursor: pointer;
+}
+
+.page__current {
+
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+.navbar {
+
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 20vw 0 20vw;
+    
+}
+
+.navbar__links {
+
+    margin-left: auto;
+    color: white;
+}
+
+.post_id_page {
+
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+}
+
+a:hover {
+    color: rgb(236, 236, 236);
+}
+
+select {
+
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #212121;;
+}
+
+h1 {
+
+    color: white;
+}

@@ -1,0 +1,726 @@
+* {
+    font-family: 'Lato',sans-serif;
+    /* outline: 1px solid limegreen !important;  */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #c92e2e;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-flex-order: none;
+    appearance: none;
+    border: none;
+    transition: 0.2s;
+    outline: none;
+    font-weight: 750;
+}
+
+select:hover {
+    color: #c92e2e;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    border-start-end-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c92e2e;
+    border: .25em solid white;
+    border-radius: 100vw;
+}
+
+/* ----------- ID . снизу ----------- */
+
+#head-block {
+    min-width: 1368px;
+    min-height: 800px;
+    z-index: -1;
+    /* background-color: #c92e2e48; */
+}
+
+#header-firm-logo {
+    /* position: absolute; */
+    margin: 15px;
+}
+
+#header-bar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+#header-menu a,
+.header-right {
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+#fill-background {
+    content: '123';
+    background-color: red;
+}
+
+#header-right {
+    font-weight: 500;
+    color: #c92e2e;
+}
+
+#header-menu a:hover {
+    padding: 0px 15px 0 15px;
+    text-decoration: none;
+    font-size: 1.15em;
+    color: #c92e2e;
+}
+
+#header-menu a:after {
+    content: '';
+    border-bottom: solid 1px rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+#header-menu a:hover:after,
+#header-menu a:hover:after {
+    transform: scaleX(1);
+}
+
+#header-menu a:hover,
+#header-menu a:hover {
+    cursor: pointer;
+}
+
+#text-in-contact {
+    margin: 0 35px 0 35px;
+}
+
+#head-background {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMSIgaGVpZ2h0PSI1MDIiIHZpZXdCb3g9IjAgMCAxOTIxIDUwMiIgZmlsbD0iI0M5MkUyRSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgNDMwVjQ3N0w5NTkgNDg5TDAgNDMwWiIvPgo8cGF0aCBkPSJNMTAyNy41IDQ2MUwwIDQxM1YxNTQuNUw1NjIuNSAxMDQuNUwwIDExMi41VjEwNy41TDE5MTkuNSAzOEwxMzk4IDk2TDE5MjEgODhWNTAySDE5MTlMMTU5Ni41IDQ4OEwxOTE5LjUgNDgzLjVMOTI3IDQxOC41TDEwMjcuNSA0NjFaIi8+CjxwYXRoIGQ9Ik02OTEuNSA1M0wxOTQgNjkuNUwyNjMuNSAzMEw2OTEuNSA1M1oiLz4KPHBhdGggZD0iTTE2NTcgMzVMODU1IDcxTDE1ODcuNSAwTDE2NTcgMzVaIi8+Cjwvc3ZnPgo=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    z-index: 2;
+}
+
+#head-text {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    color: white;
+    line-height: 62px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    max-width: 1368px;
+    user-select: none;
+}
+
+#head-button {
+    margin-top: 50px;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    color: #c92e2e;
+    overflow: hidden;
+    right: 725px;
+    top: 100px;
+    transition: 0.2s;
+}
+
+#head-button:hover {
+    background-color: #c92e2e;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #ffffff;
+}
+
+#profile-img {
+    position: absolute;
+    bottom: 25%;
+    left: 65%;
+}
+
+#border-info-block {
+    position: relative;
+    display: flex;
+    border: solid 5px #c92e2e;
+    width: 400px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+#border-text {
+    margin: 25px 0 25px 75px;
+    text-align: left;
+    color: #c92e2e;
+    font-size: 25px;
+    font-weight: 850;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+#border-info-block>#border-firm-logo {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    z-index: 1;
+    
+}
+
+#info-about-me {
+
+    width: 800px;
+    font-size: 20px;
+    text-align: left;
+    margin: 100px auto;
+
+}
+
+#side-lines {
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+    height: 2650px;
+    top: 30%;
+    left: 12%;
+    background-color: white;
+    box-shadow: 0 0 5px 5px #dfdfdf;
+}
+
+#background-skill {
+    width: 70%;
+    max-width: 30%;
+    margin: 100px auto;
+}
+
+#contact-list {
+    margin: 0 auto;
+    margin: 70px;
+    text-align: center;
+}
+
+#text-choose-lang {
+    display: inline-block;
+    font-size: 20px;
+}
+
+#select {
+    margin-top: 25px;
+}
+
+#contact-fields {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 20%;
+}
+
+#contact-name, #contact-subject, #contact-mail {
+    border: none;
+    border: 2px solid #e2e2e2;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact-textarea {
+
+    border: 2px solid #e2e2e2;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact-textarea:focus, #contact-name:focus, #contact-subject:focus, #contact-mail:focus {
+    outline-width: 0;
+}
+
+#contact-send {
+    width: 175px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 50px;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#contact-send:disabled {
+    background-color: #9f9f9f;
+}
+
+#contact-send:enabled {
+    background-color: #c92e2e;
+}
+
+#contact-send:hover:enabled {
+    cursor: pointer;
+    background-color: #b22b2b;
+}
+
+#background-title {
+    margin: 55px auto;
+    padding: 25px;
+    width: 60%;
+}
+
+#info-my-project {
+    margin-top: 75px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 5em; */
+}
+
+#example-img {
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#example-img:hover {
+    transform: scale(1.1);
+}
+
+#example-img #example-background {
+    position: absolute;
+    height: 154px;
+    width: 266px;
+    left: 18px;
+    bottom: 65px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+#example-background:after {
+    content: '';
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+#example-img:hover #example-background {
+    background-color: rgba(0, 0, 0, 0.653);
+}
+
+#example-img:hover .example-1:after {
+    content: 'Sale/Purchase Website';
+}
+
+#example-img:hover .example-2:after {
+    content: 'Simple CV site';
+}
+
+#example-img:hover .example-3:after {
+    content: 'Website for course work';
+}
+
+#example-img:hover .example-4:after {
+    content: 'Fixed game: Snake';
+}
+
+#example-img:hover .example-5:after {
+    content: 'Website with news feed';
+}
+
+#natification-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* ----------- ID . сверху ----------- */
+
+/* ----------- Классы . снизу ----------- */
+
+.header-right {
+    border: solid 2px #c92e2e;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #c92e2e;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.header-right:hover {
+    color: #ffffff;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #c92e2e;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.skill {
+    margin: 25px auto;
+    border: solid 2px #c92e2e;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 3;
+}
+
+.sk-bg::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #c92e2e;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 2.5s;
+}
+
+.sk-1::before {
+    width: 90%;
+}
+
+.sk-2::before {
+    width: 70%;
+}
+
+.sk-3::before {
+    width: 75%;
+}
+
+.sk-4::before {
+    width: 80%;
+}
+
+.sk-5::before {
+    width: 79%;
+}
+
+.sk-6::before {
+    width: 93%;
+}
+
+.sk-7::before {
+    width: 55%;
+}
+
+.sk-8::before {
+    width: 80%;
+}
+
+.sk-9::before {
+    width: 85%;
+}
+
+
+.sk-10::before {
+    width: 40%;
+}
+
+.sk-11::before {
+    width: 30%;
+}
+
+/* .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #c92e2e;
+} */
+
+.share-line {
+
+    width: 70%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #c92e2e;
+}
+
+.section-grey-background {
+    padding: 1px 0 1px 0;
+    background-color: rgb(250, 249, 250);
+    z-index: -1;
+}
+/* ----------- Классы . сверху ----------- */
+
+/* ----------- Другое . снизу ----------- */
+
+
+@media screen and (max-width: 1366px) {
+    #border-firm-logo {
+        /* display: none!important; */
+        transform: scale(0.8);
+        flex-basis: auto;
+    }
+    
+    #profile-img {
+        transform: scale(0.7);
+    }
+
+    #head-text {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1670px) {
+
+    #head-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    #head-text {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    #head-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #head-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+
+    #link-links {
+        display: none!important;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 1670px) {
+
+    #link-my-works {
+        display: none;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    #link-skills {
+        display: none;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    #link-about-me {
+        display: none;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 875px) {
+
+    #profile-img {
+        display: none;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .header-right {
+        display: none;
+        flex-basis: auto;
+    }
+}
+
+/* ----------- Правило для смартфоно в----------- */
+
+@media (max-width:1366px) {
+    #head-button {
+        right: 580px;
+    }
+}
+
+
+@media (max-width:876px) {
+
+    #head-background {
+        width: 95%;
+        height: 30%;
+    }
+
+    #head-button {
+        display: none;
+    }
+
+    #profile-img {
+        transform: scale(0.5);
+        left: 400px;
+        bottom: 0px;
+    }
+
+    #head-block {
+        min-width: 500px;
+        min-height: 400px;
+    }
+
+    #head-text {
+        font-size: 25px;
+        letter-spacing: 4px;
+        left: 5%
+    }  
+
+    #border-info-block {
+        border: none;
+    }
+
+    #border-firm-logo {
+        display: none;
+    }
+
+    #border-text {
+        margin: 0 auto;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    #info-about-me {
+        max-width: 450px;
+    }
+
+    #contact-list {
+        margin: 0 auto;
+    }
+
+    #background-skill {
+        max-width: 100%;
+    }
+
+    #contact-fields {
+        width: 90%;
+    }
+}
+
+/* ---- iPhone SE 2, 8, 7, 6 ---- */
+@media (max-width:428px) {
+
+    #head-background {
+        width: 95%;
+        height: 70%;
+    }
+
+    #head-block {
+        min-width: 300px;
+        min-height: 750px;
+    }
+
+    #head-text {
+        font-size: 20px;
+        letter-spacing: 2px;
+        left: 5%
+    } 
+
+    #border-info-block {
+        border: none;
+    }
+
+    #border-firm-logo {
+        display: none;
+    }
+
+    #border-text {
+        margin: 0 auto;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    #info-about-me {
+        max-width: 250px;
+    }
+
+    #contact-list {
+        margin: 0 auto;
+    }
+
+    #background-skill {
+        max-width: 100%;
+    }
+
+    #contact-fields {
+        width: 90%;
+    }
+}
+
+@media (max-width:375px) {
+
+    #head-background {
+        width: 95%;
+        height: 100%;
+    }
+}
+
+
+/* ----------- Другое . сверху ----------- */
